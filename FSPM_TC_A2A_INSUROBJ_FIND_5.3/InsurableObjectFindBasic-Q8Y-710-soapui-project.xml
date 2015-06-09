@@ -1,0 +1,1751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="insrblobjminsrblobj_q_Q8Y_710_WDSL" resourceRoot="" soapui-version="5.1.2" abortOnError="false" runType="SEQUENTIAL" id="841c92ff-846f-4b38-8668-ab9815a48f98" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="INSRBLOBJMINSRBLOBJ_Q" type="wsdl" bindingName="{http://sap.com/xi/FS-PM}INSRBLOBJMINSRBLOBJ_Q" soapVersion="1_1" anonymous="optional" definition="//DWDF204.wdf.sap.corp/FSPMProject/FS-PM_5.3/Scrum4/Working Folder/By Person/Stefan Rutzmoser/Timur/insrblobjminsrblobj_q_q8y_wsdl.xml" id="504c1bd2-d896-45ce-b3f9-2dfb5350fbe2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart="file:////DWDF204.wdf.sap.corp/FSPMProject/FS-PM_5.3/Scrum4/Working%20Folder/By%20Person/Stefan%20Rutzmoser/Timur/insrblobjminsrblobj_q_q8y_wsdl.xml">
+      <con:part>
+        <con:url>file:////DWDF204.wdf.sap.corp/FSPMProject/FS-PM_5.3/Scrum4/Working%20Folder/By%20Person/Stefan%20Rutzmoser/Timur/insrblobjminsrblobj_q_q8y_wsdl.xml</con:url>
+        <con:content><![CDATA[<wsdl:definitions targetNamespace="http://sap.com/xi/FS-PM" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://sap.com/xi/FS-PM" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:n1="http://sap.com/xi/SAPGlobal20/Global">
+  <wsdl:documentation>
+    <sidl:sidl xmlns:sidl="http://www.sap.com/2007/03/sidl"/>
+  </wsdl:documentation>
+  <wsp:UsingPolicy wsdl:required="true"/>
+  <wsp:Policy wsu:Id="BN__INSRBLOBJMINSRBLOBJ_Q">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+        <saptrnbnd:OptimizedMimeSerialization wsp:Optional="true" xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization"/>
+        <wsaw:UsingAddressing wsp:Optional="true" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"/>
+        <wsp:All>
+          <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+            <wsp:Policy>
+              <sp:TransportToken>
+                <wsp:Policy>
+                  <sp:HttpsToken>
+                    <wsp:Policy>
+                      <sp:HttpBasicAuthentication/>
+                    </wsp:Policy>
+                  </sp:HttpsToken>
+                </wsp:Policy>
+              </sp:TransportToken>
+              <sp:AlgorithmSuite>
+                <wsp:Policy>
+                  <sp:Basic128Rsa15/>
+                </wsp:Policy>
+              </sp:AlgorithmSuite>
+              <sp:Layout>
+                <wsp:Policy>
+                  <sp:Strict/>
+                </wsp:Policy>
+              </sp:Layout>
+            </wsp:Policy>
+          </sp:TransportBinding>
+        </wsp:All>
+      </wsp:All>
+      <wsp:All>
+        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+        <saptrnbnd:OptimizedXMLTransfer uri="http://xml.sap.com/2006/11/esi/esp/binxml" wsp:Optional="true" xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/"/>
+        <wsaw:UsingAddressing wsp:Optional="true" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"/>
+        <wsp:All>
+          <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+            <wsp:Policy>
+              <sp:TransportToken>
+                <wsp:Policy>
+                  <sp:HttpsToken>
+                    <wsp:Policy>
+                      <sp:HttpBasicAuthentication/>
+                    </wsp:Policy>
+                  </sp:HttpsToken>
+                </wsp:Policy>
+              </sp:TransportToken>
+              <sp:AlgorithmSuite>
+                <wsp:Policy>
+                  <sp:Basic128Rsa15/>
+                </wsp:Policy>
+              </sp:AlgorithmSuite>
+              <sp:Layout>
+                <wsp:Policy>
+                  <sp:Strict/>
+                </wsp:Policy>
+              </sp:Layout>
+            </wsp:Policy>
+          </sp:TransportBinding>
+        </wsp:All>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="IF__InsurableObjectManagementQueryInsurableObjectIn">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sapsession:Session xmlns:sapsession="http://www.sap.com/webas/630/soap/features/session/">
+          <sapsession:enableSession>false</sapsession:enableSession>
+        </sapsession:Session>
+        <sapcentraladmin:CentralAdministration wsp:Optional="true" xmlns:sapcentraladmin="http://www.sap.com/webas/700/soap/features/CentralAdministration/">
+          <sapcentraladmin:BusinessApplicationID>005056B23A091ED2A3AD9D70677ACBB7</sapcentraladmin:BusinessApplicationID>
+        </sapcentraladmin:CentralAdministration>
+        <sapcentraladmin:CentralAdministration wsp:Optional="true" xmlns:sapcentraladmin="http://www.sap.com/webas/700/soap/features/CentralAdministration/">
+          <sapcentraladmin:InterfaceCheckSum>4D130AF7A107C4F2267302053E89B0869060E9C1</sapcentraladmin:InterfaceCheckSum>
+        </sapcentraladmin:CentralAdministration>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="OP__FindInsurableObjectSimpleByBasicData">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://sap.com/xi/FS-PM" xmlns="http://sap.com/xi/FS-PM" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0" xmlns:sprx="urn:sap.com:abap:proxy" xmlns:xi0="http://sap.com/xi/SAPGlobal20/Global">
+      <xsd:annotation>
+        <xsd:documentation>
+          <sprx:documentation version="1" baseURL="http://ldciq8y.wdf.sap.corp:50020/sap/bc/esdt/docu/xsd_type?sap-client=710"/>
+        </xsd:documentation>
+      </xsd:annotation>
+      <xsd:simpleType name="AgencyIdentificationCode">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Code</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="3"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="BusinessDocumentMessageHeader">
+        <xsd:sequence>
+          <xsd:element name="ID" minOccurs="0" type="BusinessDocumentMessageID"/>
+          <xsd:element name="UUID" minOccurs="0" type="UUID"/>
+          <xsd:element name="ReferenceID" minOccurs="0" type="BusinessDocumentMessageID"/>
+          <xsd:element name="ReferenceUUID" minOccurs="0" type="UUID"/>
+          <xsd:element name="CreationDateTime" type="GLOBAL_DateTime"/>
+          <xsd:element name="TestDataIndicator" minOccurs="0" type="Indicator"/>
+          <xsd:element name="ReconciliationIndicator" minOccurs="0" type="Indicator"/>
+          <xsd:element name="SenderBusinessSystemID" minOccurs="0" type="BusinessSystemID"/>
+          <xsd:element name="RecipientBusinessSystemID" minOccurs="0" type="BusinessSystemID"/>
+          <xsd:element name="SenderParty" minOccurs="0" type="BusinessDocumentMessageHeaderParty"/>
+          <xsd:element name="RecipientParty" minOccurs="0" maxOccurs="unbounded" type="BusinessDocumentMessageHeaderParty"/>
+          <xsd:element name="BusinessScope" minOccurs="0" maxOccurs="unbounded" type="BusinessScope"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="BusinessDocumentMessageHeaderParty">
+        <xsd:sequence>
+          <xsd:element name="InternalID" minOccurs="0" type="PartyInternalID"/>
+          <xsd:element name="StandardID" minOccurs="0" maxOccurs="unbounded" type="PartyStandardID"/>
+          <xsd:element name="ContactPerson" minOccurs="0" type="BusinessDocumentMessageHeaderPartyContactPerson"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="BusinessDocumentMessageHeaderPartyContactPerson">
+        <xsd:sequence>
+          <xsd:element name="InternalID" minOccurs="0" type="ContactPersonInternalID"/>
+          <xsd:element name="OrganisationFormattedName" minOccurs="0" maxOccurs="4" type="LANGUAGEINDEPENDENT_MEDIUM_Name"/>
+          <xsd:element name="PersonFormattedName" minOccurs="0" maxOccurs="4" type="LANGUAGEINDEPENDENT_LONG_Name"/>
+          <xsd:element name="PhoneNumber" minOccurs="0" maxOccurs="unbounded" type="PhoneNumber"/>
+          <xsd:element name="FaxNumber" minOccurs="0" maxOccurs="unbounded" type="PhoneNumber"/>
+          <xsd:element name="EmailURI" minOccurs="0" maxOccurs="unbounded" type="EmailURI"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="BusinessDocumentMessageID">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleContent>
+          <xsd:extension base="BusinessDocumentMessageID.Content">
+            <xsd:attribute name="schemeID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="schemeAgencyID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="schemeAgencySchemeAgencyID" type="AgencyIdentificationCode"/>
+          </xsd:extension>
+        </xsd:simpleContent>
+      </xsd:complexType>
+      <xsd:simpleType name="BusinessDocumentMessageID.Content">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="35"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="BusinessScope">
+        <xsd:sequence>
+          <xsd:element name="TypeCode" type="BusinessScopeTypeCode"/>
+          <xsd:element name="InstanceID" minOccurs="0" type="BusinessScopeInstanceID"/>
+          <xsd:element name="ID" minOccurs="0" type="BusinessScopeID"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="BusinessScopeID">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleContent>
+          <xsd:extension base="BusinessScopeID.Content">
+            <xsd:attribute name="schemeID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="schemeAgencyID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+          </xsd:extension>
+        </xsd:simpleContent>
+      </xsd:complexType>
+      <xsd:simpleType name="BusinessScopeID.Content">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="36"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="BusinessScopeInstanceID">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleContent>
+          <xsd:extension base="BusinessScopeInstanceID.Content">
+            <xsd:attribute name="schemeID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="schemeAgencyID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+          </xsd:extension>
+        </xsd:simpleContent>
+      </xsd:complexType>
+      <xsd:simpleType name="BusinessScopeInstanceID.Content">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="36"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="BusinessScopeTypeCode">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Code</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleContent>
+          <xsd:extension base="BusinessScopeTypeCode.Content">
+            <xsd:attribute name="listID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="listVersionID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="15"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="listAgencyID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="listAgencySchemeID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="listAgencySchemeAgencyID" type="AgencyIdentificationCode"/>
+          </xsd:extension>
+        </xsd:simpleContent>
+      </xsd:complexType>
+      <xsd:simpleType name="BusinessScopeTypeCode.Content">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="4"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="BusinessSystemID">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="60"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="ContactPersonInternalID">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleContent>
+          <xsd:extension base="ContactPersonInternalID.Content">
+            <xsd:attribute name="schemeID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="schemeAgencyID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+          </xsd:extension>
+        </xsd:simpleContent>
+      </xsd:complexType>
+      <xsd:simpleType name="ContactPersonInternalID.Content">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="32"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="CountryCode">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Code</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="3"/>
+          <xsd:minLength value="2"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="CountryDiallingCode">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Code</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="10"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="DataTypeReference">
+        <xsd:sequence>
+          <xsd:element name="DataTypeName" type="LANGUAGEINDEPENDENT_Name"/>
+          <xsd:element name="DataTypeNamespaceURI" type="NamespaceURI"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:simpleType name="Date">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Date</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:date">
+          <xsd:pattern value="[0-9]{4}-[0-9]{2}-[0-9]{2}"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="EmailURI">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>URI</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleContent>
+          <xsd:extension base="xsd:anyURI">
+            <xsd:attribute name="schemeID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+          </xsd:extension>
+        </xsd:simpleContent>
+      </xsd:complexType>
+      <xsd:complexType name="ExchangeFaultData">
+        <xsd:sequence>
+          <xsd:element name="faultText" type="xsd:string"/>
+          <xsd:element name="faultUrl" minOccurs="0" type="xsd:string"/>
+          <xsd:element name="faultDetail" minOccurs="0" maxOccurs="unbounded" type="ExchangeLogData"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ExchangeLogData">
+        <xsd:sequence>
+          <xsd:element name="severity" minOccurs="0" type="xsd:string"/>
+          <xsd:element name="text" type="xsd:string"/>
+          <xsd:element name="url" minOccurs="0" type="xsd:string"/>
+          <xsd:element name="id" minOccurs="0" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:simpleType name="GLOBAL_DateTime">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>DateTime</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:dateTime">
+          <xsd:pattern value="[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(.[0-9]{1,7})?Z"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Indicator">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Indicator</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:boolean"/>
+      </xsd:simpleType>
+      <xsd:complexType name="InsrblObjFSByBscDataQrySelByExtPrtyInsrblObjID">
+        <xsd:sequence>
+          <xsd:element name="SearchText" type="SearchText"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="InsrblObjFSByBscDataQrySelByInsrblObjCat">
+        <xsd:sequence>
+          <xsd:element name="CategoryCode" type="InsurableObjectCategoryCode"/>
+          <xsd:element name="SubCategoryCode" minOccurs="0" type="InsurableObjectSubCategoryCode"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="InsrblObjFSByBscDataQrySelByInsrblObjID">
+        <xsd:sequence>
+          <xsd:element name="SearchText" type="SearchText"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="InsrblObjFSByBscDataQrySelByInsrblObjName">
+        <xsd:sequence>
+          <xsd:element name="SearchText" type="SearchText"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="InsrblObjFSSimplByBscDataQryInsrblObjSelByBscData">
+        <xsd:sequence>
+          <xsd:element name="InsurableObjectVersionSelectionDate" minOccurs="0" type="Date"/>
+          <xsd:element name="SelectionByInsurableObjectInternalID" minOccurs="0" type="InsrblObjFSByBscDataQrySelByInsrblObjID"/>
+          <xsd:element name="SelectionByExternalPartyInsurableObjectID" minOccurs="0" type="InsrblObjFSByBscDataQrySelByExtPrtyInsrblObjID"/>
+          <xsd:element name="SelectionByInsurableObjectName" minOccurs="0" type="InsrblObjFSByBscDataQrySelByInsrblObjName"/>
+          <xsd:element name="SelectionByInsurableObjectCategory" minOccurs="0" type="InsrblObjFSByBscDataQrySelByInsrblObjCat"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="InsrblObjFSSimplByBscDataQryMsg">
+        <xsd:sequence>
+          <xsd:element name="MessageHeader" type="BusinessDocumentMessageHeader"/>
+          <xsd:element name="InsurableObjectSelectionByBasicData" type="InsrblObjFSSimplByBscDataQryInsrblObjSelByBscData"/>
+          <xsd:element name="ProcessingConditions" minOccurs="0" type="QueryProcessingConditions"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="InsrblObjFSSimplByBscDataRspInsrblObj">
+        <xsd:sequence>
+          <xsd:element name="InternalID" type="InsurableObjectInternalID"/>
+          <xsd:element name="ExternalPartyInsurableObjectID" minOccurs="0" type="InsurableObjectID_V1"/>
+          <xsd:element name="VersionID" type="InsurableObjectVersionID"/>
+          <xsd:element name="VersionStartDate" type="Date"/>
+          <xsd:element name="Name" type="LANGUAGEINDEPENDENT_LONG_Name"/>
+          <xsd:element name="CategoryCode" type="InsurableObjectCategoryCode"/>
+          <xsd:element name="SubCategoryCode" type="InsurableObjectSubCategoryCode"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="InsrblObjFSSimplByBscDataRspMsg">
+        <xsd:sequence>
+          <xsd:element name="MessageHeader" type="BusinessDocumentMessageHeader"/>
+          <xsd:element name="InsurableObject" minOccurs="0" maxOccurs="unbounded" type="InsrblObjFSSimplByBscDataRspInsrblObj"/>
+          <xsd:element name="ProcessingConditions" minOccurs="0" type="ResponseProcessingConditions"/>
+          <xsd:element name="Log" type="Log_V1"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="InsurableObjectCategoryCode">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Code</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleContent>
+          <xsd:extension base="InsurableObjectCategoryCode.Content">
+            <xsd:attribute name="listID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="listVersionID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="15"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="listAgencyID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+          </xsd:extension>
+        </xsd:simpleContent>
+      </xsd:complexType>
+      <xsd:simpleType name="InsurableObjectCategoryCode.Content">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="5"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="InsurableObjectID_V1">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleContent>
+          <xsd:extension base="InsurableObjectID_V1.Content">
+            <xsd:attribute name="schemeID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="schemeVersionID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="15"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="schemeAgencyID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+          </xsd:extension>
+        </xsd:simpleContent>
+      </xsd:complexType>
+      <xsd:simpleType name="InsurableObjectID_V1.Content">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="20"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="InsurableObjectInternalID">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleContent>
+          <xsd:extension base="InsurableObjectInternalID.Content">
+            <xsd:attribute name="schemeID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="schemeAgencyID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+          </xsd:extension>
+        </xsd:simpleContent>
+      </xsd:complexType>
+      <xsd:simpleType name="InsurableObjectInternalID.Content">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="20"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="InsurableObjectSubCategoryCode">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Code</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleContent>
+          <xsd:extension base="InsurableObjectSubCategoryCode.Content">
+            <xsd:attribute name="listID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="listVersionID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="15"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="listAgencyID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+          </xsd:extension>
+        </xsd:simpleContent>
+      </xsd:complexType>
+      <xsd:simpleType name="InsurableObjectSubCategoryCode.Content">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="5"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="InsurableObjectVersionID">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="10"/>
+          <xsd:minLength value="1"/>
+          <xsd:pattern value="\d+"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="LANGUAGEINDEPENDENT_LONG_Name">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Name</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="80"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="LANGUAGEINDEPENDENT_MEDIUM_Name">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Name</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="40"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="LANGUAGEINDEPENDENT_Name">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Name</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string"/>
+      </xsd:simpleType>
+      <xsd:simpleType name="LanguageCode">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Code</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:language">
+          <xsd:maxLength value="9"/>
+          <xsd:minLength value="2"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="LogItemCategoryCode">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Code</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleContent>
+          <xsd:extension base="LogItemCategoryCode.Content">
+            <xsd:attribute name="listID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="listVersionID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="15"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="listAgencyID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="listAgencySchemeID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="listAgencySchemeAgencyID" type="AgencyIdentificationCode"/>
+          </xsd:extension>
+        </xsd:simpleContent>
+      </xsd:complexType>
+      <xsd:simpleType name="LogItemCategoryCode.Content">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="15"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="LogItemNotePlaceholderSubstitutionList_V1">
+        <xsd:sequence>
+          <xsd:element name="FirstPlaceholderID" type="LogItemTemplatePlaceholderID"/>
+          <xsd:element name="SecondPlaceholderID" minOccurs="0" type="LogItemTemplatePlaceholderID"/>
+          <xsd:element name="ThirdPlaceholderID" minOccurs="0" type="LogItemTemplatePlaceholderID"/>
+          <xsd:element name="FourthPlaceholderID" minOccurs="0" type="LogItemTemplatePlaceholderID"/>
+          <xsd:element name="FirstPlaceholderSubstitutionText" type="LogItemPlaceholderSubstitutionText"/>
+          <xsd:element name="SecondPlaceholderSubstitutionText" minOccurs="0" type="LogItemPlaceholderSubstitutionText"/>
+          <xsd:element name="ThirdPlaceholderSubstitutionText" minOccurs="0" type="LogItemPlaceholderSubstitutionText"/>
+          <xsd:element name="FourthPlaceholderSubstitutionText" minOccurs="0" type="LogItemPlaceholderSubstitutionText"/>
+          <xsd:element name="FirstPlaceholderGlobalDataTypeReference" minOccurs="0" type="DataTypeReference"/>
+          <xsd:element name="SecondPlaceholderGlobalDataTypeReference" minOccurs="0" type="DataTypeReference"/>
+          <xsd:element name="ThirdPlaceholderGlobalDataTypeReference" minOccurs="0" type="DataTypeReference"/>
+          <xsd:element name="FourthPlaceholderGlobalDataTypeReference" minOccurs="0" type="DataTypeReference"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LogItemNoteTemplateText_V1">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Text</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleContent>
+          <xsd:extension base="LogItemNoteTemplateText_V1.Content">
+            <xsd:attribute name="languageCode" type="LanguageCode"/>
+          </xsd:extension>
+        </xsd:simpleContent>
+      </xsd:complexType>
+      <xsd:simpleType name="LogItemNoteTemplateText_V1.Content">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="255"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="LogItemPlaceholderSubstitutionText">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Text</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="50"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="LogItemSeverityCode">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Code</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+          <xsd:length value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="LogItemTemplatePlaceholderID">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+          <xsd:length value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="LogItemTypeID_V1">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="61"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="LogItemTypeIdentifierTypeCode">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Code</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="2"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="LogItem_V1">
+        <xsd:sequence>
+          <xsd:element name="TypeID" minOccurs="0" type="LogItemTypeID_V1"/>
+          <xsd:element name="TypeIdentifierTypeCode" minOccurs="0" type="LogItemTypeIdentifierTypeCode"/>
+          <xsd:element name="SystemMessageTypeReference" minOccurs="0" type="SystemMessageTypeReference"/>
+          <xsd:element name="CategoryCode" minOccurs="0" type="LogItemCategoryCode"/>
+          <xsd:element name="SeverityCode" minOccurs="0" type="LogItemSeverityCode"/>
+          <xsd:element name="ReferenceObjectNodeSenderTechnicalID" minOccurs="0" type="ObjectNodePartyTechnicalID"/>
+          <xsd:element name="ReferenceMessageElementName" minOccurs="0" type="LANGUAGEINDEPENDENT_Name"/>
+          <xsd:element name="Note" type="Note"/>
+          <xsd:element name="NoteTemplateText" minOccurs="0" type="LogItemNoteTemplateText_V1"/>
+          <xsd:element name="LogItemNotePlaceholderSubstitutionList" minOccurs="0" type="LogItemNotePlaceholderSubstitutionList_V1"/>
+          <xsd:element name="WebURI" minOccurs="0" type="WebURI"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Log_V1">
+        <xsd:sequence>
+          <xsd:element name="BusinessDocumentProcessingResultCode" minOccurs="0" type="ProcessingResultCode"/>
+          <xsd:element name="MaximumLogItemSeverityCode" minOccurs="0" type="LogItemSeverityCode"/>
+          <xsd:element name="Item" minOccurs="0" maxOccurs="unbounded" type="LogItem_V1"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="MEDIUM_Name">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Name</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleContent>
+          <xsd:extension base="MEDIUM_Name.Content">
+            <xsd:attribute name="languageCode" type="LanguageCode"/>
+          </xsd:extension>
+        </xsd:simpleContent>
+      </xsd:complexType>
+      <xsd:simpleType name="MEDIUM_Name.Content">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="40"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="NamespaceURI">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>URI</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleContent>
+          <xsd:extension base="xsd:anyURI">
+            <xsd:attribute name="schemeID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+          </xsd:extension>
+        </xsd:simpleContent>
+      </xsd:complexType>
+      <xsd:complexType name="Note">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Note</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleContent>
+          <xsd:extension base="xsd:string">
+            <xsd:attribute name="languageCode" type="LanguageCode"/>
+          </xsd:extension>
+        </xsd:simpleContent>
+      </xsd:complexType>
+      <xsd:simpleType name="NumberValue">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Value</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:int">
+          <xsd:maxInclusive value="999999999"/>
+          <xsd:minInclusive value="0"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="ObjectID">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleContent>
+          <xsd:extension base="ObjectID.Content">
+            <xsd:attribute name="schemeID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="schemeVersionID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="15"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="schemeAgencyID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="schemeAgencySchemeID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="schemeAgencySchemeAgencyID" type="AgencyIdentificationCode"/>
+          </xsd:extension>
+        </xsd:simpleContent>
+      </xsd:complexType>
+      <xsd:simpleType name="ObjectID.Content">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="100"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="ObjectNodePartyTechnicalID">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="70"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="PartyInternalID">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleContent>
+          <xsd:extension base="PartyInternalID.Content">
+            <xsd:attribute name="schemeID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="schemeAgencyID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+          </xsd:extension>
+        </xsd:simpleContent>
+      </xsd:complexType>
+      <xsd:simpleType name="PartyInternalID.Content">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="32"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="PartyStandardID">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleContent>
+          <xsd:extension base="PartyStandardID.Content">
+            <xsd:attribute name="schemeAgencyID" use="required">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="3"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+          </xsd:extension>
+        </xsd:simpleContent>
+      </xsd:complexType>
+      <xsd:simpleType name="PartyStandardID.Content">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="13"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="PhoneNumber">
+        <xsd:sequence>
+          <xsd:element name="AreaID" minOccurs="0" type="PhoneNumberAreaID"/>
+          <xsd:element name="SubscriberID" minOccurs="0" type="PhoneNumberSubscriberID"/>
+          <xsd:element name="ExtensionID" minOccurs="0" type="PhoneNumberExtensionID"/>
+          <xsd:element name="CountryCode" minOccurs="0" type="CountryCode"/>
+          <xsd:element name="CountryDiallingCode" minOccurs="0" type="CountryDiallingCode"/>
+          <xsd:element name="CountryName" minOccurs="0" type="MEDIUM_Name"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:simpleType name="PhoneNumberAreaID">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="10"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="PhoneNumberExtensionID">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="10"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="PhoneNumberSubscriberID">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="30"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="ProcessingResultCode">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Code</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="2"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="QueryProcessingConditions">
+        <xsd:sequence>
+          <xsd:element name="QueryHitsMaximumNumberValue" minOccurs="0" type="NumberValue"/>
+          <xsd:element name="QueryHitsUnlimitedIndicator" type="Indicator"/>
+          <xsd:element name="LastReturnedObjectID" minOccurs="0" type="ObjectID"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ResponseProcessingConditions">
+        <xsd:sequence>
+          <xsd:element name="ReturnedQueryHitsNumberValue" type="NumberValue"/>
+          <xsd:element name="MoreHitsAvailableIndicator" type="Indicator"/>
+          <xsd:element name="LastReturnedObjectID" minOccurs="0" type="ObjectID"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:simpleType name="SearchText">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Text</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string"/>
+      </xsd:simpleType>
+      <xsd:complexType name="SystemMessageTypeGroupReference">
+        <xsd:sequence>
+          <xsd:element name="SystemMessageTypeGroupName" type="LANGUAGEINDEPENDENT_Name"/>
+          <xsd:element name="SystemMessageTypeGroupNamespaceURI" type="NamespaceURI"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="SystemMessageTypeReference">
+        <xsd:sequence>
+          <xsd:element name="SystemMessageTypeGroupReference" type="SystemMessageTypeGroupReference"/>
+          <xsd:element name="SystemMessageTypeName" type="LANGUAGEINDEPENDENT_Name"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="UUID">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleContent>
+          <xsd:extension base="UUID.Content">
+            <xsd:attribute name="schemeID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="schemeAgencyID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+          </xsd:extension>
+        </xsd:simpleContent>
+      </xsd:complexType>
+      <xsd:simpleType name="UUID.Content">
+        <xsd:restriction base="xsd:token">
+          <xsd:length value="36"/>
+          <xsd:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="WebURI">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm>URI</ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:anyURI"/>
+      </xsd:simpleType>
+    </xsd:schema>
+    <xsd:schema targetNamespace="http://sap.com/xi/SAPGlobal20/Global" xmlns="http://sap.com/xi/SAPGlobal20/Global" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0" xmlns:sprx="urn:sap.com:abap:proxy" xmlns:xi0="http://sap.com/xi/SAPGlobal20/Global">
+      <xsd:import namespace="http://sap.com/xi/FS-PM"/>
+      <xsd:annotation>
+        <xsd:documentation>
+          <sprx:documentation version="1" baseURL="http://ldciq8y.wdf.sap.corp:50020/sap/bc/esdt/docu/xsd_type?sap-client=710"/>
+        </xsd:documentation>
+      </xsd:annotation>
+      <xsd:element name="InsurableObjectFSSimpleByBasicDataQuery" type="tns:InsrblObjFSSimplByBscDataQryMsg"/>
+      <xsd:element name="InsurableObjectFSSimpleByBasicDataResponse" type="tns:InsrblObjFSSimplByBscDataRspMsg"/>
+      <xsd:element name="StandardMessageFault">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="standard" type="tns:ExchangeFaultData"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="InsurableObjectFSSimpleByBasicDataQuery">
+    <wsdl:part name="InsurableObjectFSSimpleByBasicDataQuery" element="n1:InsurableObjectFSSimpleByBasicDataQuery"/>
+  </wsdl:message>
+  <wsdl:message name="InsurableObjectFSSimpleByBasicDataResponse">
+    <wsdl:part name="InsurableObjectFSSimpleByBasicDataResponse" element="n1:InsurableObjectFSSimpleByBasicDataResponse"/>
+  </wsdl:message>
+  <wsdl:message name="StandardMessageFault">
+    <wsdl:part name="StandardMessageFault" element="n1:StandardMessageFault"/>
+  </wsdl:message>
+  <wsdl:portType name="InsurableObjectManagementQueryInsurableObjectIn">
+    <wsdl:documentation>
+      <sapdoc:sapdoc xmlns:sapdoc="urn:sap:esi:documentation">
+        <sapdoc:docitem applicationComponent="FS-PM"/>
+      </sapdoc:sapdoc>
+    </wsdl:documentation>
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#IF__InsurableObjectManagementQueryInsurableObjectIn"/>
+    </wsp:Policy>
+    <wsdl:operation name="FindInsurableObjectSimpleByBasicData">
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP__FindInsurableObjectSimpleByBasicData"/>
+      </wsp:Policy>
+      <wsdl:input message="tns:InsurableObjectFSSimpleByBasicDataQuery"/>
+      <wsdl:output message="tns:InsurableObjectFSSimpleByBasicDataResponse"/>
+      <wsdl:fault name="StandardMessageFault" message="tns:StandardMessageFault"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="INSRBLOBJMINSRBLOBJ_Q" type="tns:InsurableObjectManagementQueryInsurableObjectIn">
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#BN__INSRBLOBJMINSRBLOBJ_Q"/>
+    </wsp:Policy>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="FindInsurableObjectSimpleByBasicData">
+      <soap:operation soapAction="http://sap.com/xi/FS-PM/InsurableObjectManagementQueryInsurableObjectIn/FindInsurableObjectSimpleByBasicDataRequest" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="StandardMessageFault">
+        <soap:fault name="StandardMessageFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="INSRBLOBJMINSRBLOBJ_Q">
+    <wsdl:port name="INSRBLOBJMINSRBLOBJ_Q" binding="tns:INSRBLOBJMINSRBLOBJ_Q">
+      <soap:address location="https://ldciq8y.wdf.sap.corp:44320/sap/bc/srt/xip/pm0/insurableobjectmanagement/710/insrblobjminsrblobj_q/insrblobjminsrblobj_q"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content>
+        <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
+      </con:part>
+    </con:definitionCache>
+    <con:endpoints>
+      <con:endpoint>${#Project#Endpoint_Find}</con:endpoint>
+    </con:endpoints>
+    <con:operation isOneWay="false" action="http://sap.com/xi/FS-PM/InsurableObjectManagementQueryInsurableObjectIn/FindInsurableObjectSimpleByBasicDataRequest" name="FindInsurableObjectSimpleByBasicData" bindingOperationName="FindInsurableObjectSimpleByBasicData" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="5cb908b8-1105-4bb5-acd1-f0303b8a9e10">
+      <con:settings/>
+      <con:call name="Request 1" id="fda14c31-b085-44e6-a86a-eef74b692b16">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>${#Project#Endpoint_Find}</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fs="http://sap.com/xi/FS-PM">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <fs:InsurableObjectFSSimpleByBasicDataQuery>
+         <MessageHeader>
+            <!--type: GLOBAL_DateTime-->
+           <UUID>${=UUID.randomUUID( ).toString( )}</UUID> 
+            <ID>${=UUID.randomUUID().toString().toUpperCase().replaceAll("-", "")}</ID>
+            <CreationDateTime>${=(new java.text.SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'").format(new Date()))}</CreationDateTime>
+        </MessageHeader>
+       <InsurableObjectSelectionByBasicData>
+            <!--Optional:-->
+            <!--type: Date-->
+            <InsurableObjectVersionSelectionDate>2014-01-01</InsurableObjectVersionSelectionDate>
+            <!--Optional:-->
+            <SelectionByInsurableObjectInternalID>
+               <!--type: SearchText-->
+               <SearchText>*1*</SearchText>
+            </SelectionByInsurableObjectInternalID>
+            <!--Optional:-->
+            <SelectionByExternalPartyInsurableObjectID>
+            
+               <!--type: SearchText-->
+               <SearchText></SearchText>
+            </SelectionByExternalPartyInsurableObjectID>
+            <!--Optional:-->
+            <SelectionByInsurableObjectName>
+               <!--type: SearchText-->
+               <SearchText>BUR*</SearchText>
+            </SelectionByInsurableObjectName>
+            <!--Optional:-->
+            <SelectionByInsurableObjectCategory>
+               <CategoryCode listID="murmure montis circum" listVersionID="maria ac" listAgencyID="imponet honorem talia">*</CategoryCode>
+               <!--Optional:-->
+               <SubCategoryCode listID="per auras" listVersionID="et carcere" listAgencyID="tempestatesque sonoras">*</SubCategoryCode>
+            </SelectionByInsurableObjectCategory>
+         </InsurableObjectSelectionByBasicData>
+         <!--Optional:-->
+         <ProcessingConditions>
+            <!--Optional:-->
+            <!--type: NumberValue-->
+            <QueryHitsMaximumNumberValue></QueryHitsMaximumNumberValue>
+            <!--type: Indicator-->
+            <QueryHitsUnlimitedIndicator></QueryHitsUnlimitedIndicator>
+            <!--Optional:-->
+            <LastReturnedObjectID schemeID="montis circum" schemeVersionID="et laxas sciret" schemeAgencyID="premit ac" schemeAgencySchemeID="numen iunonis" schemeAgencySchemeAgencyID="vas">profundum quippe</LastReturnedObjectID>
+         </ProcessingConditions>
+         
+       <!--<InsurableObjectSelectionByBasicData/-->
+      </fs:InsurableObjectFSSimpleByBasicDataQuery>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://sap.com/xi/FS-PM/InsurableObjectManagementQueryInsurableObjectIn/FindInsurableObjectSimpleByBasicDataRequest"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>
+  </con:interface>
+  <con:testSuite name="1466 - A2A-Services for Finding Insurable Object - Positive" id="9bf44f6c-ce4c-4a2e-8915-824561ff43a9">
+    <con:settings/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="FindInsurableObjectSimpleByBasicData TestCase" searchProperties="true" id="b005b9f1-8401-471d-9188-e9dda2663f04">
+      <con:settings/>
+      <con:testStep type="request" name="find a specific insurable object" id="1e9d0171-139f-4109-8804-0d87ed91d841">
+        <con:settings/>
+        <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:interface>INSRBLOBJMINSRBLOBJ_Q</con:interface>
+          <con:operation>FindInsurableObjectSimpleByBasicData</con:operation>
+          <con:request name="find a specific insurable object" id="f4fe4bf4-efab-4298-a62e-ab58a8566764">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>${#Project#Endpoint_Find}</con:endpoint>
+            <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:glob="http://sap.com/xi/SAPGlobal20/Global">
+   <soapenv:Header/>
+   <soapenv:Body>
+     <glob:InsurableObjectFSSimpleByBasicDataQuery>
+         <MessageHeader>
+            <!--type: GLOBAL_DateTime-->
+           <UUID>${=UUID.randomUUID( ).toString( )}</UUID> 
+            <ID>${=UUID.randomUUID().toString().toUpperCase().replaceAll("-", "")}</ID>
+            <CreationDateTime>${=(new java.text.SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'").format(new Date()))}</CreationDateTime>
+        </MessageHeader>
+       <InsurableObjectSelectionByBasicData>
+            <!--Optional:-->
+            <!--type: Date-->
+            <InsurableObjectVersionSelectionDate></InsurableObjectVersionSelectionDate>
+            <!--Optional:-->
+            <SelectionByInsurableObjectInternalID>
+               <!--type: SearchText-->
+               <SearchText>${#TestCase#insurableObjectNr}</SearchText>
+            </SelectionByInsurableObjectInternalID>
+            <!--Optional:-->
+            <SelectionByExternalPartyInsurableObjectID> 
+               <!--type: SearchText-->
+               <SearchText></SearchText>
+            </SelectionByExternalPartyInsurableObjectID>
+            <!--Optional:-->
+            <SelectionByInsurableObjectName>
+               <!--type: SearchText-->
+               <SearchText></SearchText>
+            </SelectionByInsurableObjectName>
+            <!--Optional:-->
+            <SelectionByInsurableObjectCategory>
+               <CategoryCode listID="murmure montis circum" listVersionID="maria ac" listAgencyID="imponet honorem talia"></CategoryCode>
+               <!--Optional:-->
+               <SubCategoryCode listID="per auras" listVersionID="et carcere" listAgencyID="tempestatesque sonoras"></SubCategoryCode>
+            </SelectionByInsurableObjectCategory>
+         </InsurableObjectSelectionByBasicData>
+         <!--Optional:-->
+         <ProcessingConditions>
+            <!--Optional:-->
+            <!--type: NumberValue-->
+            <QueryHitsMaximumNumberValue>10</QueryHitsMaximumNumberValue>
+            <!--type: Indicator-->
+            <QueryHitsUnlimitedIndicator>true</QueryHitsUnlimitedIndicator>
+            <!--Optional:-->
+            <LastReturnedObjectID schemeID="montis circum" schemeVersionID="et laxas sciret" schemeAgencyID="premit ac" schemeAgencySchemeID="numen iunonis" schemeAgencySchemeAgencyID="vas">profundum quippe</LastReturnedObjectID>
+         </ProcessingConditions>
+         
+       <!--<InsurableObjectSelectionByBasicData/-->
+       </glob:InsurableObjectFSSimpleByBasicDataQuery>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+            <con:assertion type="SOAP Response" id="3cf7fd18-e71f-4455-b40b-905c61a96d61"/>
+            <con:assertion type="XPath Match" name="XPath Match" id="aa0e1373-0c32-43eb-86d8-3ee02ab0e052">
+              <con:configuration>
+                <path>//InternalID[1]</path>
+                <content>111111111111113</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:username/>
+              <con:password/>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:wsaConfig mustUnderstand="NONE" version="200508"/>
+            <con:wsrmConfig version="1.2"/>
+          </con:request>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="request" name="find by wildcard" id="1f2899b9-e43c-48f0-9af8-ff4733e06402">
+        <con:settings/>
+        <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:interface>INSRBLOBJMINSRBLOBJ_Q</con:interface>
+          <con:operation>FindInsurableObjectSimpleByBasicData</con:operation>
+          <con:request name="find by wildcard" id="9bd9a3b9-cb91-437f-b5b1-32bf26387fdc">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>${#Project#Endpoint_Find}</con:endpoint>
+            <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:glob="http://sap.com/xi/SAPGlobal20/Global">
+   <soapenv:Header/>
+   <soapenv:Body>
+       <glob:InsurableObjectFSSimpleByBasicDataQuery>
+         <MessageHeader>
+            <!--type: GLOBAL_DateTime-->
+           <UUID>${=UUID.randomUUID( ).toString( )}</UUID> 
+            <ID>${=UUID.randomUUID().toString().toUpperCase().replaceAll("-", "")}</ID>
+            <CreationDateTime>${=(new java.text.SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'").format(new Date()))}</CreationDateTime>
+        </MessageHeader>
+       <InsurableObjectSelectionByBasicData>
+            <!--Optional:-->
+            <!--type: Date-->
+            <InsurableObjectVersionSelectionDate>2014-01-01</InsurableObjectVersionSelectionDate>
+            <!--Optional:-->
+            <SelectionByInsurableObjectInternalID>
+               <!--type: SearchText-->
+               <SearchText>1*</SearchText>
+            </SelectionByInsurableObjectInternalID>
+            <!--Optional:-->
+            <SelectionByExternalPartyInsurableObjectID>
+            
+               <!--type: SearchText-->
+               <SearchText></SearchText>
+            </SelectionByExternalPartyInsurableObjectID>
+            <!--Optional:-->
+            <SelectionByInsurableObjectName>
+               <!--type: SearchText-->
+               <SearchText>*temporary Object</SearchText>
+            </SelectionByInsurableObjectName>
+            <!--Optional:-->
+            <SelectionByInsurableObjectCategory>
+               <CategoryCode listID="murmure montis circum" listVersionID="maria ac" listAgencyID="imponet honorem talia">*</CategoryCode>
+               <!--Optional:-->
+               <SubCategoryCode listID="per auras" listVersionID="et carcere" listAgencyID="tempestatesque sonoras">*</SubCategoryCode>
+            </SelectionByInsurableObjectCategory>
+         </InsurableObjectSelectionByBasicData>
+         <!--Optional:-->
+         <ProcessingConditions>
+            <!--Optional:-->
+            <!--type: NumberValue-->
+            <QueryHitsMaximumNumberValue>10</QueryHitsMaximumNumberValue>
+            <!--type: Indicator-->
+            <QueryHitsUnlimitedIndicator>true</QueryHitsUnlimitedIndicator>
+            <!--Optional:-->
+            <LastReturnedObjectID schemeID="montis circum" schemeVersionID="et laxas sciret" schemeAgencyID="premit ac" schemeAgencySchemeID="numen iunonis" schemeAgencySchemeAgencyID="vas">profundum quippe</LastReturnedObjectID>
+         </ProcessingConditions>
+         
+       <!--<InsurableObjectSelectionByBasicData/-->
+       </glob:InsurableObjectFSSimpleByBasicDataQuery>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+            <con:assertion type="SOAP Response" id="884170cd-adf0-49bd-ab7a-0fe728a23847"/>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:wsaConfig mustUnderstand="NONE" version="200508"/>
+            <con:wsrmConfig version="1.2"/>
+          </con:request>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="request" name="find wth maxrecord is zero" id="6c1e30a7-8090-4c36-ade4-03195709a904">
+        <con:settings/>
+        <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:interface>INSRBLOBJMINSRBLOBJ_Q</con:interface>
+          <con:operation>FindInsurableObjectSimpleByBasicData</con:operation>
+          <con:request name="find wth maxrecord is zero" id="88dd2d58-0b52-45b8-bccb-8e3937ca0bee">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>${#Project#Endpoint_Find}</con:endpoint>
+            <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:glob="http://sap.com/xi/SAPGlobal20/Global">
+   <soapenv:Header/>
+   <soapenv:Body>
+       <glob:InsurableObjectFSSimpleByBasicDataQuery>
+         <MessageHeader>
+            <!--type: GLOBAL_DateTime-->
+           <UUID>${=UUID.randomUUID( ).toString( )}</UUID> 
+            <ID>${=UUID.randomUUID().toString().toUpperCase().replaceAll("-", "")}</ID>
+            <CreationDateTime>${=(new java.text.SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'").format(new Date()))}</CreationDateTime>
+        </MessageHeader>
+       <InsurableObjectSelectionByBasicData>
+            <!--Optional:-->
+            <!--type: Date-->
+            <InsurableObjectVersionSelectionDate>2014-01-01</InsurableObjectVersionSelectionDate>
+            <!--Optional:-->
+            <SelectionByInsurableObjectInternalID>
+               <!--type: SearchText-->
+               <SearchText>1*</SearchText>
+            </SelectionByInsurableObjectInternalID>
+            <!--Optional:-->
+            <SelectionByExternalPartyInsurableObjectID>
+            
+               <!--type: SearchText-->
+               <SearchText></SearchText>
+            </SelectionByExternalPartyInsurableObjectID>
+            <!--Optional:-->
+            <SelectionByInsurableObjectName>
+               <!--type: SearchText-->
+               <SearchText>*</SearchText>
+            </SelectionByInsurableObjectName>
+            <!--Optional:-->
+            <SelectionByInsurableObjectCategory>
+               <CategoryCode listID="murmure montis circum" listVersionID="maria ac" listAgencyID="imponet honorem talia">*</CategoryCode>
+               <!--Optional:-->
+               <SubCategoryCode listID="per auras" listVersionID="et carcere" listAgencyID="tempestatesque sonoras">*</SubCategoryCode>
+            </SelectionByInsurableObjectCategory>
+         </InsurableObjectSelectionByBasicData>
+         <!--Optional:-->
+         <ProcessingConditions>
+            <!--Optional:-->
+            <!--type: NumberValue-->
+            <QueryHitsMaximumNumberValue>0</QueryHitsMaximumNumberValue>
+            <!--type: Indicator-->
+            <QueryHitsUnlimitedIndicator>true</QueryHitsUnlimitedIndicator>
+            <!--Optional:-->
+            <LastReturnedObjectID schemeID="montis circum" schemeVersionID="et laxas sciret" schemeAgencyID="premit ac" schemeAgencySchemeID="numen iunonis" schemeAgencySchemeAgencyID="vas">profundum quippe</LastReturnedObjectID>
+         </ProcessingConditions>
+         
+       <!--<InsurableObjectSelectionByBasicData/-->
+      </glob:InsurableObjectFSSimpleByBasicDataQuery>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+            <con:assertion type="SOAP Response" id="5c11d070-d9cc-45de-b76f-eafc4c15bfed"/>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:wsaConfig mustUnderstand="NONE" version="200508"/>
+            <con:wsrmConfig version="1.2"/>
+          </con:request>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="request" name="find with optional fields" id="cf34bf70-60d5-43f3-9c93-19a968ef1e14">
+        <con:settings/>
+        <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:interface>INSRBLOBJMINSRBLOBJ_Q</con:interface>
+          <con:operation>FindInsurableObjectSimpleByBasicData</con:operation>
+          <con:request name="find with optional fields" id="75ed4e1e-818e-4dd9-9762-575a78ce61cf">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>${#Project#Endpoint_Find}</con:endpoint>
+            <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:glob="http://sap.com/xi/SAPGlobal20/Global">
+   <soapenv:Header/>
+   <soapenv:Body>
+     <glob:InsurableObjectFSSimpleByBasicDataQuery>
+         <MessageHeader>
+            <!--type: GLOBAL_DateTime-->
+           <UUID>${=UUID.randomUUID( ).toString( )}</UUID> 
+            <ID>${=UUID.randomUUID().toString().toUpperCase().replaceAll("-", "")}</ID>
+            <CreationDateTime>${=(new java.text.SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'").format(new Date()))}</CreationDateTime>
+        </MessageHeader>
+       <InsurableObjectSelectionByBasicData>
+            <!--Optional:-->
+            <!--type: Date-->
+            <InsurableObjectVersionSelectionDate></InsurableObjectVersionSelectionDate>
+            <!--Optional:-->
+            <SelectionByInsurableObjectInternalID>
+               <!--type: SearchText-->
+               <SearchText></SearchText>
+            </SelectionByInsurableObjectInternalID>
+            <!--Optional:-->
+            <SelectionByExternalPartyInsurableObjectID> 
+               <!--type: SearchText-->
+               <SearchText></SearchText>
+            </SelectionByExternalPartyInsurableObjectID>
+            <!--Optional:-->
+            <SelectionByInsurableObjectName>
+               <!--type: SearchText-->
+               <SearchText></SearchText>
+            </SelectionByInsurableObjectName>
+            <!--Optional:-->
+            <SelectionByInsurableObjectCategory>
+               <CategoryCode listID="murmure montis circum" listVersionID="maria ac" listAgencyID="imponet honorem talia"></CategoryCode>
+               <!--Optional:-->
+               <SubCategoryCode listID="per auras" listVersionID="et carcere" listAgencyID="tempestatesque sonoras"></SubCategoryCode>
+            </SelectionByInsurableObjectCategory>
+         </InsurableObjectSelectionByBasicData>
+         <!--Optional:-->
+         <ProcessingConditions>
+            <!--Optional:-->
+            <!--type: NumberValue-->
+            <QueryHitsMaximumNumberValue>100</QueryHitsMaximumNumberValue>
+            <!--type: Indicator-->
+            <QueryHitsUnlimitedIndicator>true</QueryHitsUnlimitedIndicator>
+            <!--Optional:-->
+            <LastReturnedObjectID schemeID="montis circum" schemeVersionID="et laxas sciret" schemeAgencyID="premit ac" schemeAgencySchemeID="numen iunonis" schemeAgencySchemeAgencyID="vas">profundum quippe</LastReturnedObjectID>
+         </ProcessingConditions>
+         
+       <!--<InsurableObjectSelectionByBasicData/-->
+       </glob:InsurableObjectFSSimpleByBasicDataQuery>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+            <con:assertion type="SOAP Response" id="d830bfc5-085c-4364-8e37-eb37e6ebf0c4"/>
+            <con:credentials>
+              <con:username/>
+              <con:password/>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:wsaConfig mustUnderstand="NONE" version="200508"/>
+            <con:wsrmConfig version="1.2"/>
+          </con:request>
+        </con:config>
+      </con:testStep>
+      <con:properties>
+        <con:property>
+          <con:name>insurableObjectNr</con:name>
+          <con:value>111111111111113</con:value>
+        </con:property>
+      </con:properties>
+    </con:testCase>
+    <con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="A2A-Services for Finding Insurable Object - Negative" searchProperties="true" id="855dc784-d2ff-456a-8dcc-fd8974c89a5a">
+      <con:settings/>
+      <con:testStep type="request" name="invalidate effective date" id="7eb57a38-9d45-4588-8726-09aed278af00">
+        <con:settings/>
+        <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:interface>INSRBLOBJMINSRBLOBJ_Q</con:interface>
+          <con:operation>FindInsurableObjectSimpleByBasicData</con:operation>
+          <con:request name="invalidate effective date" id="7b85d9a3-78ea-418e-bbaa-5f4eab9b895c">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>${#Project#Endpoint_Find}</con:endpoint>
+            <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:glob="http://sap.com/xi/SAPGlobal20/Global">
+   <soapenv:Header/>
+   <soapenv:Body>
+       <glob:InsurableObjectFSSimpleByBasicDataQuery>
+         <MessageHeader>
+            <!--type: GLOBAL_DateTime-->
+           <UUID>${=UUID.randomUUID( ).toString( )}</UUID> 
+            <ID>${=UUID.randomUUID().toString().toUpperCase().replaceAll("-", "")}</ID>
+            <CreationDateTime>${=(new java.text.SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'").format(new Date()))}</CreationDateTime>
+        </MessageHeader>
+       <InsurableObjectSelectionByBasicData>
+            <!--Optional:-->
+            <!--type: Date-->
+            <InsurableObjectVersionSelectionDate>12345</InsurableObjectVersionSelectionDate>
+            <!--Optional:-->
+            <SelectionByInsurableObjectInternalID>
+               <!--type: SearchText-->
+               <SearchText>1*</SearchText>
+            </SelectionByInsurableObjectInternalID>
+            <!--Optional:-->
+            <SelectionByExternalPartyInsurableObjectID>
+            
+               <!--type: SearchText-->
+               <SearchText></SearchText>
+            </SelectionByExternalPartyInsurableObjectID>
+            <!--Optional:-->
+            <SelectionByInsurableObjectName>
+               <!--type: SearchText-->
+               <SearchText></SearchText>
+            </SelectionByInsurableObjectName>
+            <!--Optional:-->
+            <SelectionByInsurableObjectCategory>
+               <CategoryCode listID="murmure montis circum" listVersionID="maria ac" listAgencyID="imponet honorem talia"></CategoryCode>
+               <!--Optional:-->
+               <SubCategoryCode listID="per auras" listVersionID="et carcere" listAgencyID="tempestatesque sonoras"></SubCategoryCode>
+            </SelectionByInsurableObjectCategory>
+         </InsurableObjectSelectionByBasicData>
+         <!--Optional:-->
+         <ProcessingConditions>
+            <!--Optional:-->
+            <!--type: NumberValue-->
+            <QueryHitsMaximumNumberValue>10</QueryHitsMaximumNumberValue>
+            <!--type: Indicator-->
+            <QueryHitsUnlimitedIndicator>true</QueryHitsUnlimitedIndicator>
+            <!--Optional:-->
+            <LastReturnedObjectID schemeID="montis circum" schemeVersionID="et laxas sciret" schemeAgencyID="premit ac" schemeAgencySchemeID="numen iunonis" schemeAgencySchemeAgencyID="vas">profundum quippe</LastReturnedObjectID>
+         </ProcessingConditions>
+         
+       <!--<InsurableObjectSelectionByBasicData/-->
+       </glob:InsurableObjectFSSimpleByBasicDataQuery>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+            <con:assertion type="SOAP Response" id="46498818-27b3-45dc-a08e-7153d9501b16"/>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:wsaConfig mustUnderstand="NONE" version="200508"/>
+            <con:wsrmConfig version="1.2"/>
+          </con:request>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:properties/>
+  </con:testSuite>
+  <con:endpointStrategy xsi:type="con:DefaultEndpointStrategy" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:endpoint mode="COMPLEMENT" username="fstester" password="Insurance1">https://ldcig8e.wdf.sap.corp:44300/sap/bc/srt/xip/pm0/insurableobjectmanagement/700/insrblobjminsrblobj_m/insrblobjminsrblobj_m</con:endpoint>
+    <con:endpoint mode="COMPLEMENT" username="fstester" password="Insurance1">https://ldcig8e.wdf.sap.corp:44300/sap/bc/srt/rfc/sap/z_create_application_by_ecatt/700/create/create</con:endpoint>
+    <con:endpoint mode="COMPLEMENT" username="fstester" password="Insurance1">https://ldcig8e.wdf.sap.corp:44300/sap/bc/srt/xip/pm0/insurableobjectmanagement/700/insrblobjminsrblobj_q/insrblobjminsrblobj_q</con:endpoint>
+    <con:endpoint mode="COMPLEMENT" username="${#Project#DefaultUsername}" password="${#Project#DefaultPWD}">${#Project#Endpoint_Find}</con:endpoint>
+  </con:endpointStrategy>
+  <con:properties>
+    <con:property>
+      <con:name>Endpoint_Find</con:name>
+      <con:value>https://${#Project#ServerAndPort}/sap/bc/srt/xip/pm0/insurableobjectmanagement/${#Project#TestClient}/insrblobjminsrblobj_q/insrblobjminsrblobj_q</con:value>
+    </con:property>
+    <con:property>
+      <con:name>ServerAndPort</con:name>
+      <con:value>ldciq8y.wdf.sap.corp:44320</con:value>
+    </con:property>
+    <con:property>
+      <con:name>TestClient</con:name>
+      <con:value>710</con:value>
+    </con:property>
+    <con:property>
+      <con:name>DefaultUsername</con:name>
+      <con:value>TEST_SERVICE</con:value>
+    </con:property>
+    <con:property>
+      <con:name>DefaultPWD</con:name>
+      <con:value>Letmein</con:value>
+    </con:property>
+  </con:properties>
+  <con:wssContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:sensitiveInformation/>
+</con:soapui-project>

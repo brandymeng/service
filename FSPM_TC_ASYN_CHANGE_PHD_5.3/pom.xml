@@ -1,0 +1,18 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.sap.FSPM</groupId>
+	<artifactId>com.sap.FSPM.Services</artifactId>
+	<packaging>jar</packaging>
+	<name>FSPM_TC_ASYN_CHANGE_PHD</name>
+	<url>http://www.sap.com</url>
+	<parent>
+		<groupId>com.sap</groupId>
+		<artifactId>com.sap.FSPM</artifactId>
+		<version>5.3</version>
+		<relativePath>../../FS-PM-Services-master_pom.xml</relativePath>
+	</parent>
+	<properties>
+		<SoapUIProjectFile>AsyncServiceUpdatePolicyHolder-soapui-project.xml</SoapUIProjectFile>
+	</properties>
+</project>
